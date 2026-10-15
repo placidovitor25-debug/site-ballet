@@ -1,0 +1,68 @@
+#arquivos e pastas do sistema operacional.
+.DS_Store
+Thumbs.db
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Desktop.ini
+
+#config pessoais do vs code 
+.vscode/
+!.vscode/settings.json
+!.vscode/extensions.json
+
+
+#intelij idea
+.idea/
+
+# exlipse 
+.project
+.classpath
+.settings/
+
+# dependencias JavaScript
+node_modules/
+
+#gerenciador de pacotes 
+.npm/
+.pnpm-store/
+
+
+#arquivos temporarios k
+*.tmp
+*.log
+*.temp
+*.bak
+*.swp
+*.swo
+*~
+
+##arquivos de log 
+
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+#variaveis de ambiente
+
+.env
+.env.*
+
+# arquivos de complação 
+
+dist/
+build/
+coverage/
+
+#cache 
+.cache/
+.parcel-cache/
+.eslintcache
+
+
+#arqiuvos do sistema e backups
+
+*.orig
+*.rej

@@ -1,0 +1,208 @@
+/* 
+   TABLETS E NOTEBOOKS MENORES
+ */
+
+@media (max-width: 1000px) {
+
+    .cabecalho {
+        padding-inline: 24px;
+        gap: 16px;
+    }
+
+    .menu {
+        gap: 16px;
+    }
+
+    .sobre {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sobre-imagem {
+        min-height: 300px;
+    }
+
+    .sobre-diferenciais {
+        grid-column: 1 / -1;
+
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+
+        padding: 24px 0 0;
+        border-left: none;
+        border-top: 1px solid #e8d8dc;
+    }
+
+    .modalidades-lista {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .rodape {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+/* 
+   CELULARES  */
+
+@media (max-width: 650px) {
+
+    .secao {
+        width: calc(100% - 32px);
+    }
+
+    /* Cabeçalho */
+
+    .cabecalho {
+        position: relative;
+
+        min-height: 76px;
+        padding: 12px 20px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .logo-nome {
+        font-size: 1.6rem;
+    }
+
+    .menu-toggle {
+        display: block;
+
+        padding: 7px 12px;
+
+        background: transparent;
+        border: 1px solid #e8d8dc;
+        border-radius: 6px;
+
+        color: #393435;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+
+        width: 100%;
+        padding: 15px 0;
+
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+    }
+
+    .menu.aberto {
+        display: flex;
+    }
+
+    .menu a {
+        padding: 10px;
+    }
+
+    .menu a.link-ativo::after {
+        display: none;
+    }
+
+    .botao-cabecalho {
+        display: none;
+    }
+
+
+    /* Banner */
+
+    .hero {
+        min-height: 470px;
+        padding: 55px 24px;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(250, 241, 237, 0.97),
+                rgba(250, 241, 237, 0.78)
+            ),
+            url("https://images.unsplash.com/photo-1518834107812-67b0b7c58434?auto=format&fit=crop&w=900&q=80");
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+
+    /* Sobre a escola */
+
+    .sobre {
+        padding-block: 45px;
+
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .sobre-imagem {
+        min-height: 240px;
+    }
+
+    .sobre-diferenciais {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+
+    /* Modalidades */
+
+    .modalidades {
+        padding-block: 45px;
+    }
+
+    .modalidades-lista {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .modalidade-imagem {
+        height: 220px;
+    }
+
+    .modalidade-conteudo p {
+        min-height: auto;
+    }
+
+
+    /* Chamada para contato */
+
+    .chamada-contato {
+        width: calc(100% - 32px);
+        margin-bottom: 30px;
+        padding: 28px 22px;
+
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+
+    /* Rodapé */
+
+    .rodape {
+        padding: 35px 24px;
+
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .rodape-logo {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}

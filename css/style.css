@@ -1,0 +1,65 @@
+/* Configurações gerais */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: arial, sans-serif;
+    background-color: #FAF8F5;
+    color: #333333;
+    line-height: 1.6;
+}
+
+header{
+    background-color: #F1D0E3;
+    padding: 20px 40px;
+    text-align: center;
+}
+
+header h1{
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #333333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #B76E97;
+}
+
+main {
+    padding: 40px 20px;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto 40px;
+}
+
+section h2{
+    margin-bottom: 15px;
+    color: #B76E97;
+}
+
+footer {
+    background-color: #F1DDE3;
+    text-align: center;
+    padding: 20px;
+}
